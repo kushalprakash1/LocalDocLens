@@ -1,0 +1,88 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+secrets.*
+credentials.*
+token.*
+tokens.*
+
+# Local user documents - NEVER COMMIT
+data/docs/*
+!data/docs/.gitkeep
+
+# Local databases - may contain extracted supplier facts, cache, learning data
+data/db/*
+!data/db/.gitkeep
+*.sqlite
+*.sqlite3
+*.db
+
+# Vector indexes / local search indexes
+data/index/*
+data/lancedb/*
+lancedb/*
+*.lance
+
+# Generated artifacts / reports / benchmarks
+artifacts/*
+!artifacts/.gitkeep
+
+# Local model/cache folders
+models/
+.cache/
+.cache*/
+huggingface/
+.huggingface/
+paddleocr/
+.ollama/
+ollama/
+
+# Logs
+logs/
+*.log
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Large generated PDFs
+stress_*.pdf
+*_supplier_packet.pdf
+
+# Temporary development patch scripts/backups
+patch_*.py
+add_*.py
+fix_*.py
+strong_fix_*.py
+reset_*.py
+update_*.py
+install_*.py
+*_before_*.py
+localdoc/*_before_*.py
+
+# Local requirements backups
+requirements_before_*.txt

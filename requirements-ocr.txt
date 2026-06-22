@@ -1,0 +1,15 @@
+﻿# Optional OCR dependencies for scanned PDFs.
+# Install only if you need OCR:
+#
+#   pip install -r requirements-ocr.txt
+#
+# OCR packages are kept optional because they are heavier and may have
+# separate native dependency/security considerations.
+
+paddlepaddle==2.6.2
+paddleocr==2.7.3
+opencv-python==4.8.1.78
+opencv-contrib-python==4.8.1.78
+
+# PaddleOCR 2.x compatibility often expects protobuf 3.x.
+protobuf==3.20.2

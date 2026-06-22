@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: localdoclens
+Version: 0.1.0
+Summary: Local-first supplier document RAG system
+Requires-Python: >=3.10
+Requires-Dist: pymupdf
+Requires-Dist: typer
+Requires-Dist: rich
+Requires-Dist: sentence-transformers
+Requires-Dist: lancedb
+Requires-Dist: pandas
+Requires-Dist: pyarrow
+Requires-Dist: rank-bm25
+Requires-Dist: numpy
+Requires-Dist: pydantic
+Requires-Dist: torch

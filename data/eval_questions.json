@@ -1,0 +1,37 @@
+[
+  {
+    "id": "expired_insurance",
+    "question": "Which suppliers have expired insurance?",
+    "expected_answer": "ABC Foods LLC",
+    "expected_page": 2,
+    "expected_terms": ["expired", "insurance", "03/12/2025"]
+  },
+  {
+    "id": "missing_w9",
+    "question": "Which suppliers are missing a W-9?",
+    "expected_answer": "ABC Foods LLC",
+    "expected_page": 1,
+    "expected_terms": ["W-9", "missing", "received"]
+  },
+  {
+    "id": "missing_signature",
+    "question": "Which documents are missing signatures?",
+    "expected_answer": "Supplier Agreement",
+    "expected_page": 4,
+    "expected_terms": ["supplier agreement", "signature", "missing"]
+  },
+  {
+    "id": "bank_verification",
+    "question": "What is the bank verification status for ABC Foods LLC?",
+    "expected_answer": "verified",
+    "expected_page": 3,
+    "expected_terms": ["bank verification", "verified", "ACH"]
+  },
+  {
+    "id": "supplier_summary",
+    "question": "Summarize ABC Foods LLC's compliance status.",
+    "expected_answer": "ABC Foods LLC",
+    "expected_page": 1,
+    "expected_terms": ["insurance", "W-9", "signature"]
+  }
+]

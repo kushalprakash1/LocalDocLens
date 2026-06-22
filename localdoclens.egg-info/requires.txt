@@ -1,0 +1,11 @@
+pymupdf
+typer
+rich
+sentence-transformers
+lancedb
+pandas
+pyarrow
+rank-bm25
+numpy
+pydantic
+torch

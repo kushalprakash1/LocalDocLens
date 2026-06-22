@@ -1,0 +1,42 @@
+﻿name: security-check
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+permissions:
+  contents: read
+
+jobs:
+  python-security:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install package and audit tools
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pip-audit
+          pip install -e .
+
+      - name: Compile Python files
+        run: |
+          python -m compileall localdoc
+
+      - name: LocalDocLens security check
+        run: |
+          localdoc security-check
+
+      - name: Python dependency vulnerability audit
+        run: |
+          pip-audit

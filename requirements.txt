@@ -1,0 +1,23 @@
+﻿# Core LocalDocLens dependencies.
+# This default install avoids optional OCR/vision-heavy packages.
+
+typer
+rich
+fastapi
+uvicorn
+pydantic
+python-multipart
+
+pandas
+numpy==1.26.4
+scikit-learn
+rank-bm25
+
+lancedb
+sentence-transformers
+
+pypdf
+PyMuPDF
+reportlab
+
+requests
